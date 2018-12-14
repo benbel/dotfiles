@@ -11,6 +11,7 @@ alias lock="xflock4"
 alias config='/usr/bin/git --git-dir=/home/benbel/.cfg/ --work-tree=/home/benbel'
 
 PATH=/home/benbel/.local/bin:$PATH
+VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 # Colours
 
