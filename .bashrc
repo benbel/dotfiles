@@ -9,6 +9,7 @@ export -f tk
 
 alias lock="xflock4"
 alias config='/usr/bin/git --git-dir=/home/benbel/.cfg/ --work-tree=/home/benbel'
+alias de="disown & exit"
 
 PATH=/home/benbel/.local/bin:$PATH
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR

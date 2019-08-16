@@ -14,3 +14,6 @@ set number
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+set undofile
+set undodir=~/.vim/undodir
+
