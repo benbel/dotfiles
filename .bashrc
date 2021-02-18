@@ -1,5 +1,14 @@
 # Bash config file
 
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source ~/.local/bin/virtualenvwrapper.sh
+
+alias del='rm -i '
+alias rm='rm -i '
+alias work="cd /media/data/ipp/"
+
 # Easy latex compilation
 tk() {
     latexmk -bibtex-cond -pdf -quiet "$1"
@@ -9,7 +18,6 @@ export -f tk
 
 alias lock="xflock4"
 alias config='/usr/bin/git --git-dir=/home/benbel/.cfg/ --work-tree=/home/benbel'
-alias de="disown & exit"
 
 PATH=/home/benbel/.local/bin:$PATH
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
