@@ -1,13 +1,7 @@
 # Bash config file
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source ~/.local/bin/virtualenvwrapper.sh
-
 alias del='rm -i '
 alias rm='rm -i '
-alias work="cd /media/data/ipp/"
 
 # Easy latex compilation
 tk() {
@@ -16,14 +10,12 @@ tk() {
     }
 export -f tk
 
-alias lock="xflock4"
 alias config='/usr/bin/git --git-dir=/home/benbel/.cfg/ --work-tree=/home/benbel'
 
 PATH=/home/benbel/.local/bin:$PATH
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 # Colours
-
 case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
@@ -44,4 +36,3 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
-
